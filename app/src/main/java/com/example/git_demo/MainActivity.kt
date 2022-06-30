@@ -11,6 +11,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        tv_one.animate()
+            .translationX(200f)
+            .translationY(100f)
+            .scaleX(2f)
+            .start()
         Thread{
             Thread.sleep(2000)
             mhandler.post {
